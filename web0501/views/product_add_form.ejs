@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>測試網頁</title>
+<!-- 連結思源中文及css -->
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC" rel="stylesheet">
+<link href="/stylesheets/menu.css" rel="stylesheet"/>  
+<link href="/stylesheets/main.css" rel="stylesheet"/>      
+<!------------------------->
+</head>
+   
+<body>
+    <!--**************************-->
+    <div class="container">    
+        <!--~~~~~~~~~~~~~~~~~-->
+        <div class="header">           
+        </div>        
+        
+        <!--~~~~~~~~~~~~~~~~~-->        
+        <ul id="navigation">        
+            <li><a href="/">主頁</a></li>            
+            
+            <li class="sub">         
+                <a href="#">客戶</a>          
+                <ul>          
+                    <li><a href="/customer/add/form">新增</a></li>
+                    <li><a href="/customer/remove/form">刪除</a></li>
+                    <li><a href="/customer/update/getOldData">更新</a></li>   
+                    <li><a href="/customer/query/form">查詢</a></li>     
+                    <li><a href="/customer/list">清單</a></li>   
+                    <li><a href="/customer/page/1">分頁</a></li>                    
+                </ul>
+            </li>
+            
+            <li class="sub">         
+                <a href="#">產品</a>          
+                <ul>          
+                    <li><a href="/product/add/form">新增</a></li>
+                    <li><a href="/product/remove/form">刪除</a></li>
+                    <li><a href="/product/update/getOldData">更新</a></li>   
+                    <li><a href="/product/query/form">查詢</a></li>  
+                    <li><a href="/product/list">清單</a></li>  
+                    <li><a href="/product/page/1">分頁</a></li>                    
+                </ul>
+            </li>   
+            
+            <li class="sub">         
+                <a href="#">供應商</a>          
+                <ul>          
+                    <li><a href="/supplier/add/form">新增</a></li>
+                    <li><a href="/supplier/remove/form">刪除</a></li>
+                    <li><a href="/supplier/update/getOldData">更新</a></li>   
+                    <li><a href="/supplier/query/form">查詢</a></li>
+                    <li><a href="/supplier/list">清單</a></li> 
+                    <li><a href="/supplier/page/1">分頁</a></li>                    
+                </ul>
+            </li>                     
+         
+         
+            <li class="sub">         
+                <a href="#">員工</a>          
+                <ul>          
+                    <li><a href="/employee/add/form">新增</a></li>
+                    <li><a href="/employee/remove/form">刪除</a></li>
+                    <li><a href="/employee/update/getOldData">更新</a></li>   
+                    <li><a href="/employee/query/form">查詢</a></li> 
+                    <li><a href="/employee/list">清單</a></li>  
+                    <li><a href="/employee/page/1">分頁</a></li>                    
+                </ul>
+            </li>  
+            
+            <li class="sub">         
+                <a href="#">日常作業</a>          
+                <ul>          
+                    <li><a href="/import/form">進貨</a></li>
+                    <li><a href="/export/form">銷貨</a></li>
+                    <li><a href="/inventory/form">盤點</a></li>          
+                </ul>
+            </li>             
+                    
+            <li class="sub">         
+                <a href="#">報表</a>          
+                <ul>          
+                    <li><a href="/reports/import">進貨報表</a></li>
+                    <li><a href="/reports/export">銷貨報表</a></li>
+                    <li><a href="/reports/inventory">庫存報表</a></li>          
+                </ul>
+            </li> 
+            
+            <li class="sub">         
+                <a href="#">使用者</a>          
+                <ul>          
+                    <li><a href="/login">登入</a></li>
+                    <li><a href="/logout">登出</a></li>         
+                </ul>
+            </li>             
+        
+        </ul>
+        
+        <!--~~~~~~~~~~~~~~~~~--> 
+        <div class="content">
+            <h2>產品新增 </h2>
+
+            <form action = "/product/add" method = "post">
+                <div class="form">
+                    <span class="name">產品編號: </span>
+                    <span class="value"><input type="text" name="prono" maxlength="4"></span>
+                    <br/>
+                                    
+                    <span class="name">產品名稱: </span>
+                    <span class="value"><input type="text" name="proname" ></span>
+                    <br/>        
+
+                    <span class="name">供應商編號: </span>
+                    <span class="value"><input type="text" name="supno" maxlength="4"></span>
+                    <br/>
+                                                        
+                    <span class="name">單價: </span>
+                    <span class="value"><input type="number" name="price" ></span>
+                    <br/>
+                                            
+                    <span class="name">盤點日期: </span>
+                    <span class="value"><input type="date" name="inventorydate" ></span>
+                    <br/>	    
+                                    
+                    <span class="name"></span>
+                    <span class="value"><input type="submit" value="新增" ></span>    
+                </div>    
+            </form>           
+               
+        </div>       
+        
+        <!--~~~~~~~~~~~~~~~~~--> 
+        <div class="footer">
+            NTUB imd, 2019.    
+        </div>  
+    </div>
+    <!--**************************-->    
+</body>
+   
+</html>
