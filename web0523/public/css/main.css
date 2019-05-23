@@ -1,0 +1,10 @@
+@charset "utf-8";
+
+.bg-dark{
+	background-color: #373260 !important;
+}
+
+.jumbotron{
+	background-color: #241e50;
+	color: #fff;
+}
